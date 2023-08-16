@@ -5,7 +5,7 @@ import { selectCartItemById } from "../../redux/cart/selectors";
 import { CartItem } from "../../redux/cart/types";
 import { addItem } from "../../redux/cart/slice";
 
-const typeNames = ["Thin", "Regular "];
+const typeNames = ["Thin crust", "Regular crust"];
 
 type PizzaBlockProps = {
   id: string;
@@ -77,7 +77,7 @@ export const PizzaBlock: React.FC<PizzaBlockProps> = ({
           </ul>
         </div>
         <div className="pizza-block__bottom">
-          <div className="pizza-block__price">$ {price}</div>
+          <div className="pizza-block__price">${price}</div>
           <button
             onClick={onClickAdd}
             className="button button--outline button--add"
